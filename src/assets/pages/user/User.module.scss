@@ -1,0 +1,161 @@
+
+.back{
+    display: flex;
+    max-width: 80px;
+    gap: 15px;
+    margin-bottom: 45px;
+    @media (max-width:690px) {
+      padding-left: 10px;
+    }
+}
+
+.user__card{
+    display: flex;
+    gap: 40px;
+    @media (max-width:690px) {
+      display: flex;
+      flex-direction: column;
+    }
+}
+.user__card_left {
+    background: #FDFDFD;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    
+}
+
+.user__card_left img {
+    max-width: 280px;
+    margin: 40px;
+    @media (max-width:690px) {
+  max-height: 187px;  
+   max-width: 287px;
+   
+    }
+}
+
+.user__card_lbottom{
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    margin: 0 40px 24px 40px ;
+}
+
+.user__card_lbottom::after {
+    content: "";
+    width: 100%; 
+    height: 1px; 
+    background-color:#DADADA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+  }
+
+  .user__card_right{
+    background: #FDFDFD;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .user__card_title{
+    display: flex;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+  }
+
+  .user__card_title::after {
+    content: "";
+    width: 100%; 
+    height: 1px; 
+    background-color:#DADADA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+  }
+  .user__card_info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .info__input{
+    margin-top: 10px;
+    max-width: 396px;
+    padding: 10px 8px 10px 16px;
+    border: 3px solid #f4f4f4;
+    border-radius: 20px;
+
+  }
+
+
+  .user__card_btn{
+    margin-top: 32px;
+max-width: 170px;
+background: black;
+color: white;
+text-align: center;
+border-radius: 50px;
+padding: 12px 42px 12px 42px
+  }
+
+.user__card_btn:hover{
+  background: #f4f4f4;
+  color: #595959;
+
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease; 
+  @media (max-width:690px) {
+    max-width: 271px;
+  }
+}
+
+.correct__img{
+  margin-bottom: 32px;
+}
+
+.correct__title{
+  margin: 0 40px 40px 40px ;
+}
+
+
+.modal__img{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

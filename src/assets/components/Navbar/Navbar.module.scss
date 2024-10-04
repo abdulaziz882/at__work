@@ -1,0 +1,34 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &_icons{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            @media (max-width:760px) {
+                display: none;
+            }
+        }
+    }
+
+}
+.aboutme{
+    display: flex;
+    gap: 8px;
+}
+.aboutme img{
+    width: 20px;
+    border-radius: 50%;
+
+
+}
+.header{
+    background: #FDFDFD;
+    margin-bottom: 40px;
+}

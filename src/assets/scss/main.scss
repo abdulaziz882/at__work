@@ -1,0 +1,34 @@
+*{  margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    }
+    
+    body{
+        background: #F4F4F4;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .container{
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;  
+        display: flex;     
+        flex-direction: column;
+
+    }
+    
+    ul{
+        list-style: none;
+    }
+
+    button,
+    input{
+       border: none;
+       outline: none;
+       background: none;
+       cursor: pointer; 
+    }
