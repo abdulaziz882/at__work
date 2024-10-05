@@ -24,7 +24,7 @@ const User = () => {
     companyName: ''
   });
 
-  // Состояние для модального окна
+ 
   const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
@@ -67,16 +67,15 @@ const User = () => {
 
     dispatch(updateUser(updatedUser));
 
-    // Показываем модальное окно
     setModalVisible(true);
     
-    // Убираем модальное окно через 4 секунды
+
     setTimeout(() => {
       setModalVisible(false);
     }, 4000);
   };
 
-  // Функция для скрытия модального окна
+
   const handleModalClose = () => {
     setModalVisible(false);
   };
@@ -165,7 +164,7 @@ const User = () => {
         <p>Загрузка...</p>
       )}
 
-      {/* Модальное окно для уведомления об успешном сохранении */}
+
       {modalVisible && (
         <div className={s.modal}>
           <div className={s.modal__content}> 

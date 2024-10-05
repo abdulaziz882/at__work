@@ -6,9 +6,9 @@ const initialState = {
   user: null,
 };
 
-// Измените URL, чтобы ограничить количество запрашиваемых пользователей
+
 export const getAllUsers = createAsyncThunk('usersSlice/getAllUsers', async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/users?_limit=6'); // Добавлено ?_limit=6
+  const res = await fetch('https://jsonplaceholder.typicode.com/users?_limit=6'); 
   const data = await res.json();
   return data;
 });
